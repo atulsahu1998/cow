@@ -1,0 +1,299 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------- Navigation bar --------*/
+#nav-bar{
+            position: sticky;
+            top: 0;
+            z-index: 10;    
+        }
+.navbar-brand
+{  
+    margin: 30px 0 0 0 ;
+    position: absolute;
+}
+.navbar-nav li
+{
+    padding:0 10px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: right;
+}
+#nav-bar ul li a:hover{
+    color: #007bff!important;
+}
+.navbar{
+    background: #ffff;
+}
+.navbar-toggler{
+    border: none!important ;
+}
+.nav-link{color: #555!important; font-weight:600; font-size: 16px;}
+
+/*-----------slider ---------*/
+
+#slider{width: 100%;}
+.carousel-caption{top:20%; transform: translate(0%); bottom: initial!important; }
+.carousel-caption h5{color: #fff; font-size: 42px;}
+
+/*------------About----------*/
+#about
+{
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555;
+}
+#about .btn 
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.about-content
+{
+    padding-top: 20px;
+}
+.skills-bar p
+{
+    padding-top: 10px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress-bar
+{
+    border-radius: 16px;
+}
+.progress
+{
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
+
+/*------------Services----------*/
+
+#products{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/products.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef!important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#products h2{
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px
+}
+#products h2::after 
+{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.products{
+    margin-top:40px ;
+}
+.icon{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+#products{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+.products .col-md-4:hover{
+    background: #007bff;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+/*--------- Team Members ----------*/
+#team{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+
+#team h1{
+    font-size: 30px;
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+}
+
+#team h1::after{
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.profile-pic{
+    margin-top: 25px;
+}
+.profile-pic .img-box{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.profile-pic .img-box img{
+        filter: grayscale(1);
+}
+.profile-pic .img-box img:hover
+{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.profile-pic h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff !important;
+}
+.profile-pic h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
+#team .fa {
+    height: 25px;
+    width: 25px;
+    color: #007bff !important;
+    background: #ffff;
+    padding: 4px;
+    border-radius: 50%;
+}
+.img-box ul{
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+} 
+.img-box ul li{
+    padding: 5px;
+    display: inline-block;
+}
+.img-box:hover ul{
+    opacity: 1;
+}
+.img-box ul, .img-box ul li{
+    transition: 0.5s;
+}
+
+/*---------Mission----------*/
+
+#mission{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/mission.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef!important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#mission h1{
+    text-align: center;
+    color: #efefef !important;
+    padding: 0 0 50px 0;
+}
+#mission h1::after 
+{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}    
+#mission h2{
+    text-align: center;
+    color: #efefef !important;
+    padding: 0 0 0 0;
+}
+/* #mission h2::after 
+{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+} */
+#mission .para:hover{
+    background: #007bff;
+    cursor: pointer;
+    transition: 0.7s;
+}
+/*----------footer Section-------*/
+footer{
+    margin: 0;
+    padding: 50px 0 50px 0;
+    color: #d9d9d9;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}
+.footer-main-content{
+    display: flex;
+}
+.footer-main-content .box {
+
+    flex-basis: 60%;
+    padding: 10px 20px;
+}
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .footer-content{
+    margin: 20px 0 0 0;
+
+}
+.box .footer-content p{
+    text-align: justify;
+}
+.left .footer-content .social{
+    margin: 20px 0 0 0 ;
+}
+.left .footer-content .social a{
+    padding: 0 2px ;
+}
+.left .footer-content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.left .footer-content .social a span:hover{
+    background: #f12020;
+}
+.center .footer-content .social a{
+    padding: 0 2px ;
+}
